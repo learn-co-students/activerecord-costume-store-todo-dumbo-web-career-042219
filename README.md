@@ -21,7 +21,7 @@ The `costumes` table will have four columns:
   2. price
   3. size
   4. image url
-  
+
 _as well as_ the two "timestamp" columns:  `created_at` and `updated_at`. This
 will provide a grand total of _six_ columns.
 
@@ -170,6 +170,7 @@ reeses = Candy.find_by(:name => "Reese's Peanut Butter Cups")
 Candy.first
 # => #<Candy id: 1, name: "Mikly Way Midnight", calories: 220>
 snickers = Candy.find(2)
+snickers = Candy.find_by(:id => 2)
 # => #<Candy id: 2, name: "Snickers", calories: 550>
 ```
 
